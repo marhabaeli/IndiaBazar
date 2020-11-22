@@ -1,0 +1,18 @@
+2020-11-21 22:33:16.144 [main] INFO   - Chrome has got launched.
+2020-11-21 22:33:24.542 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-11-21 22:33:29.557 [main] INFO   - clicked on Shop menu
+2020-11-21 22:33:32.041 [main] INFO   - clicked on Home menu
+2020-11-21 22:33:32.772 [main] INFO   - Browser got closed and quit
+2020-11-21 22:47:20.744 [main] INFO   - Chrome has got launched.
+2020-11-21 22:47:37.970 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-11-21 22:47:38.695 [main] INFO   - Browser got closed and quit
+2020-11-21 22:47:51.611 [main] INFO   - Chrome has got launched.
+2020-11-21 22:48:02.562 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-11-21 22:48:07.011 [main] INFO   - clicked on Shop menu
+2020-11-21 22:48:09.442 [main] INFO   - clicked on Home menu
+2020-11-21 22:48:11.321 [main] INFO   - clicked on Shop menu
+2020-11-21 22:48:14.729 [main] INFO   - clicked on Home menu
+2020-11-21 22:48:18.375 [main] INFO   - clicked on Shop menu
+2020-11-21 22:48:20.525 [main] INFO   - clicked on Home menu
+2020-11-21 22:48:22.529 [main] INFO   - clicked on Shop menu
+2020-11-21 22:48:53.400 [main] INFO   - Browser got closed and quit
