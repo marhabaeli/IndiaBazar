@@ -2,8 +2,12 @@ package com.test.TestCases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
+
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
@@ -22,10 +26,10 @@ public class HomePageTestCases extends TestBase {
 		super();
 	}
 
-//	@Parameters("browser")
+	@Parameters("browser")
 	@BeforeClass
-	void beforeStart() {// @Optional("Chrome") String browser) {
-		String browser = "Chrome";
+	void beforeStart(@Optional("Chrome") String browser) throws IOException {
+//		String browser = "Chrome";
 		initial(browser);
 		homepage = PageFactory.initElements(driver, Homepage.class);
 		pruductsPage = PageFactory.initElements(driver, ProductsPage.class);
@@ -36,18 +40,28 @@ public class HomePageTestCases extends TestBase {
 		quitApp();
 	}
 
-	@Test
-	void TC_1() {
+	@Test()//retryAnalyzer = com.test.Listeners.RetryAnalyzer.class)
+	void TC_1() throws Exception {
+		logger.info("in the TC_1");
 		homepage.clickOnShopmenu();
+		logger.info("clicked on Shop menu");
+		Reporter.log("clicked on Shop menu");
+//		takeScreenShot("ProductSS");
 		pruductsPage.clickOnHomemenu();
+		logger.info("clicked on Home menu");
+		Reporter.log("clicked on Home menu");
+		
 		int slidersCnt = homepage.getSliderCnt();
-		assertEquals(slidersCnt, 3);
+		assertEquals(slidersCnt, 2);
 	}
 
-	@Test
+	@Test (enabled = false)
 	void TC_2() {
+		logger.info("in the TC_2");
 		homepage.clickOnShopmenu();
+		logger.info("clicked on Shop menu");
 		pruductsPage.clickOnHomemenu();
+		logger.info("clicked on Home menu");
 		int newArrivalsCnt = homepage.getArrivalsCnt();
 		assertEquals(newArrivalsCnt, 3);
 	}
