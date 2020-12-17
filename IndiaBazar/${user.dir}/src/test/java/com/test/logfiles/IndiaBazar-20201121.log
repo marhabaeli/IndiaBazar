@@ -1,0 +1,5 @@
+2020-11-21 22:30:09.554 [main] INFO   - Chrome has got launched.
+2020-11-21 22:30:20.639 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-11-21 22:30:24.447 [main] INFO   - clicked on Shop menu
+2020-11-21 22:30:27.076 [main] INFO   - clicked on Home menu
+2020-11-21 22:30:27.817 [main] INFO   - Browser got closed and quit

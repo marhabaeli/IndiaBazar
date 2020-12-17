@@ -1,0 +1,27 @@
+2020-12-04 19:02:57.232 [main] INFO   - Chrome has got launched.
+2020-12-04 19:03:13.025 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-12-04 19:03:13.103 [main] INFO   - in the TC_1
+2020-12-04 19:03:17.461 [main] INFO   - clicked on Shop menu
+2020-12-04 19:03:21.206 [main] INFO   - clicked on Home menu
+2020-12-04 19:03:21.246 [main] INFO   - in the TC_2
+2020-12-04 19:03:25.370 [main] INFO   - clicked on Shop menu
+2020-12-04 19:03:29.670 [main] INFO   - clicked on Home menu
+2020-12-04 19:03:30.746 [main] INFO   - Browser got closed and quit
+2020-12-04 19:05:55.264 [main] INFO   - Chrome has got launched.
+2020-12-04 19:06:09.554 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-12-04 19:06:09.622 [main] INFO   - in the TC_1
+2020-12-04 19:06:14.052 [main] INFO   - clicked on Shop menu
+2020-12-04 19:06:18.747 [main] INFO   - clicked on Home menu
+2020-12-04 19:06:19.675 [main] INFO   - Browser got closed and quit
+2020-12-04 19:31:48.888 [main] INFO   - Chrome has got launched.
+2020-12-04 19:32:02.303 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-12-04 19:32:02.357 [main] INFO   - in the TC_1
+2020-12-04 19:32:11.945 [main] INFO   - clicked on Shop menu
+2020-12-04 19:32:15.045 [main] INFO   - clicked on Home menu
+2020-12-04 19:32:16.031 [main] INFO   - Browser got closed and quit
+2020-12-04 19:34:59.526 [main] INFO   - Chrome has got launched.
+2020-12-04 19:35:10.356 [main] INFO   - naviagated to http://practice.automationtesting.in/
+2020-12-04 19:35:10.442 [main] INFO   - in the TC_1
+2020-12-04 19:35:14.555 [main] INFO   - clicked on Shop menu
+2020-12-04 19:35:17.106 [main] INFO   - clicked on Home menu
+2020-12-04 19:35:18.011 [main] INFO   - Browser got closed and quit
