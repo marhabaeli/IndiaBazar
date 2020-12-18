@@ -20,6 +20,9 @@ public class Homepage extends TestBase {
 	@FindBy(xpath="//li[@id=\"menu-item-40\"]")
 	WebElement shopMenueElement;
 	
+	@FindBy(id="menu-item-50")
+	WebElement myAccntbtn;
+	
 	
 	//Actions
 	public int getSliderCnt() {
@@ -33,6 +36,10 @@ public class Homepage extends TestBase {
 	
 	public void clickOnShopmenu() {
 		shopMenueElement.click();
+	}
+	
+	public void clickOnMyAccntBtn() {
+		myAccntbtn.click();
 	}
 	
 }

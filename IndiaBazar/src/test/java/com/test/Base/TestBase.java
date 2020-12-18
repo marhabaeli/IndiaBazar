@@ -21,13 +21,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBase {
 	public static WebDriver driver;
-	public WebDriverWait explicitlyWait;
-	Properties prop;
+	
+	public Properties prop;
 	final int PAGE_LOAD_TIME=30;
 	final int IMPLICIT_WAIT=10;
-	final int EXPLICIT_WAIT=10;
+	
 	
 	public Logger logger=LogManager.getLogger(TestBase.class);
+	
 	
 	public TestBase() {
 		prop=new Properties();
