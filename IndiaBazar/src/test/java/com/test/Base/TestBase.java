@@ -17,6 +17,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 
 public class TestBase {
@@ -45,6 +47,22 @@ public class TestBase {
 		}
 	}
 	
+	@BeforeTest	
+	public void setUp() {
+		try {
+			initial("Chrome");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@AfterTest
+	public void tearDown() {
+//		quitApp();
+	}
+	
+	
 	public void initial(String browsername) throws IOException {
 		driver=getBrowser(browsername);
 		logger.info(browsername+" has got launched.");
@@ -65,12 +83,12 @@ public class TestBase {
 		logger.info("Browser got closed and quit");
 	}
 	
-	public void takeScreenShot(String outFileName) throws IOException {
-		TakesScreenshot scrShot=(TakesScreenshot)driver;
-		File scrFile=scrShot.getScreenshotAs(OutputType.FILE);
-		File dFile=new File(System.getProperty("user.dir")+"\\src\\test\\java\\com\\test\\ScreenShot\\"+outFileName+".png");
-		FileUtils.copyFile(scrFile,dFile );	
-	}
+//	public void takeScreenShot(String outFileName) throws IOException {
+//		TakesScreenshot scrShot=(TakesScreenshot)driver;
+//		File scrFile=scrShot.getScreenshotAs(OutputType.FILE);
+//		File dFile=new File(System.getProperty("user.dir")+"\\src\\test\\java\\com\\test\\ScreenShot\\"+outFileName+".png");
+//		FileUtils.copyFile(scrFile,dFile );	
+//	}
 	
 	private WebDriver getBrowser(String browsernm) {
 		WebDriver crntDriver=null;

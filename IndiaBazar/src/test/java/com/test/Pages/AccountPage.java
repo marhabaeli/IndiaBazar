@@ -1,5 +1,6 @@
 package com.test.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -22,10 +23,14 @@ public class AccountPage extends TestBase {
 	WebElement login_usrnm;
 	
 	@FindBy(id="password")
-	WebElement login_psw;
+	public WebElement login_psw;
 	
 	@FindBy(name="login")
 	WebElement loginBtn;
+	
+	@FindBy(xpath="//div[@id=\"page-36\"]/div/div/ul/li")
+	WebElement errElem;
+	
 	
 //	actions
 	public void setRegEmail(String email) {
@@ -59,6 +64,10 @@ public class AccountPage extends TestBase {
 	public void clickLoginBtn() {
 		loginBtn.click();
 		
+	}
+	
+	public String getErrTxt() {
+		return errElem.getText();
 	}
 	
 }
