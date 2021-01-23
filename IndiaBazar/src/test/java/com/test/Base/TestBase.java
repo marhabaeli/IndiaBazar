@@ -59,7 +59,7 @@ public class TestBase {
 	
 	@AfterTest
 	public void tearDown() {
-//		quitApp();
+		quitApp();
 	}
 	
 	
@@ -77,7 +77,11 @@ public class TestBase {
 		logger.info("naviagated to "+ urlString);
 	}
 	
-	public void quitApp() {
+	public void setLogger(String msg) {
+		logger.info(msg);
+	}
+	
+	private void quitApp() {
 		driver.close();
 		driver.quit();
 		logger.info("Browser got closed and quit");

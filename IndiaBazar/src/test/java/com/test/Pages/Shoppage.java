@@ -140,10 +140,14 @@ public class Shoppage extends TestBase {
 	public boolean isItemInCart() {
 		String item=itemsInBasket.get(0).getText().replace(" Item", "");
 		item=item.replace("s", "");
-		if(Integer.parseInt(item)>0	&& Double.parseDouble(itemsInBasket.get(1).getText().substring(1))>0.0)
+		if(Integer.parseInt(item)>0	&& Double.parseDouble(itemsInBasket.get(1).getText().substring(1))>0.0) {
+			setLogger("item got added to the cart");
 			return true;
-		else 
+		}
+		else {
+			setLogger("item didn't get added to the cart");
 			return false;
+		}
 	}
 	
 	public void clickOnItemInCart() {
@@ -151,7 +155,9 @@ public class Shoppage extends TestBase {
 	}
 	
 	public boolean isTotalGreatThanSub() {
-		int res= basketTotals.get(0).getText().compareTo(basketTotals.get(1).getText());
+		setLogger("subtotal: "+basketTotals.get(0).getText());
+		setLogger("total: "+basketTotals.get(2).getText());
+		int res= basketTotals.get(2).getText().compareTo(basketTotals.get(0).getText());
 		if(res>=0)
 			return true;
 		else {

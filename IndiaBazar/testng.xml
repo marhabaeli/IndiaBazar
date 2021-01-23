@@ -10,6 +10,8 @@
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="com.test.TestCases.HomePageTestCases" />
+			<class name="com.test.TestCases.AccountRegTestCases" />
+			<class name="com.test.TestCases.ShoppingTestCases" />
 		</classes>
 	</test> <!-- Test -->
 

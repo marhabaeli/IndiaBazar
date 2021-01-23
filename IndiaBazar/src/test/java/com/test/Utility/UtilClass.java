@@ -19,8 +19,9 @@ import com.test.Base.TestBase;
 
 public class UtilClass extends TestBase{
 //	public static WebDriverWait explicitlyWait;
-	static final int EXPLICIT_WAIT=10;
-	static public WebDriverWait wait=new WebDriverWait(driver, EXPLICIT_WAIT);
+	final int EXPLICIT_WAIT=10;
+//	static public WebDriverWait wait=new WebDriverWait(driver, EXPLICIT_WAIT);
+//	public WebDriverWait wait; //=new WebDriverWait(driver, EXPLICIT_WAIT);
 	
 	public void takeScreenShot(String outFileName) {
 		TakesScreenshot scrShot=(TakesScreenshot)driver;
@@ -70,10 +71,12 @@ public class UtilClass extends TestBase{
 		return reStrings;
 	}
 	
-//	public static void setExplicitWait(WebElement wElement) {
-//		WebDriverWait wait=new WebDriverWait(driver, EXPLICIT_WAIT);
+	public WebDriverWait setExplicitWait() {
+		return new WebDriverWait(driver, EXPLICIT_WAIT);
 //		wait.until(ExpectedConditions.visibilityOf(wElement));
-//	}
+	}
+	
+	
 	
 }
  
